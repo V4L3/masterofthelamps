@@ -1,0 +1,224 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color:skyblue;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+/*Font Faces*/
+@font-face {
+  font-family: 'edgeracer';
+  src: url('../fonts/edgeracer.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+#introContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/intro.png");
+}
+
+#lostContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/lost.png");
+}
+
+#gamebox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../img/gamebg.png");
+}
+
+#actor {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    left:700px; 
+    top:400px;
+    transition: all 1s;
+    transform:rotate(0deg);
+    transform:rotateX(0deg );
+    z-index:100;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(255,255,255,0.0);
+    color: white;
+    transform:rotate(45deg);
+    transition: all 0.5s;
+    border:dotted 4px #000;
+    animation-name: grow;
+    animation-timing-function:linear;
+    /*animation-duration: 3s;*/
+    position: absolute;
+    opacity: 0;
+    z-index: 99;    
+}
+
+@keyframes grow {
+    0%  {transform: scale(0.3);opacity:1;border:dotted 4px #14003F;}
+    80% {transform: scale(1.5);opacity:1;border:dotted 4px #E34BE3;}
+    95% {transform: scale(2);opacity:1;border:dotted 4px #E34BE3;}
+    100%{transform: scale(5);opacity:1;border:dotted 4px #E764E7;}
+}
+
+#score{
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    z-index: 100;
+    font-family: "edgeracer";
+    font-size: 24px;
+    color: white;
+}
+
+#fails {
+    position: fixed;
+    left: 1300px;
+    top: 10px;
+    color: red;
+    font-family: "edgeracer";
+    font-size: 24px;
+    z-index: 100;
+}
+
+.button {
+    color: white;
+    padding: 30px 64px;
+    font-size: 24px;
+    margin: 37% 0% 0% 52%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #BD1EBD;
+    font-family: "edgeracer";
+    position: absolute;
+}
+
+.newplayer {
+    color: white;
+    padding: 30px 64px;
+    font-size: 24px;
+    margin: 37% 0% 0% 30%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #BD1EBD;
+    font-family: "edgeracer";
+    position: absolute;
+}
+
+
+.lost {
+    position: absolute;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    left: 40.5%;
+    top: 10%;
+}
+
+#name {
+    position: absolute;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #BD1EBD;
+    color: white;
+    font-size: 24px;
+    left: 25%;
+    top: 63%;
+    font-family: "edgeracer";
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+#startButton {
+    position: absolute;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: #BD1EBD;
+    color: white;
+    font-size: 24px;
+    left: 56%;
+    top: 63%;
+    cursor: pointer;
+    font-family: "edgeracer";
+}
+
+#namebutton {
+    position: absolute;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    left: 40.5%;
+    top: 25%;
+}
+
+#lostscreen{
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+}
+
+.highscoreTable {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.highscoreTable td {
+    font-family: "edgeracer";
+    color: white;
+    font-size: 24px;
+    padding-right: 45px;
+}
+
+.marker
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+/*#stars{
+    position: absolute;
+    background-image: url("../img/stars.png");
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+}*/

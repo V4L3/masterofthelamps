@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Master of the Lamps</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/stars.css">
+</head>
+<body onload="keyListener()">
+    <div id="gamebox">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div id="stars">
+        </div>
+            <div id="lostscreen" style="display: none;">
+                <div>
+                    <!--<input type="text" id="name" value="">-->
+                    <a href="lost.html">
+                        <button id="namebutton" type="button">You Lost</button>
+                    </a>
+                </div>
+            </div>
+                
+            <div id="score" >
+                <p>
+                Your Score: 
+                </p>
+        	    <p id="scorecount">
+        	    </p>
+            </div>
+
+            <div id="fails">
+                <p>
+                  Missed:   
+                </p>
+                <p id="missed">
+                </p>
+            </div>
+            <!--<div id="circle"></div>
+            <div class="circle"></div>--> 
+               
+            <div id="actor"></div>
+    </div>
+</body>
+    <script src="js/index.js"></script>
+</html>
